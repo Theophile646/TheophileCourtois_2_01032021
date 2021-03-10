@@ -13,8 +13,16 @@ body {
 
 #block-page {
     font-family: 'Raleway', Arial, serif;
-    font-size: 16px;
+    font-size: 1em;
     
+}
+
+h2 {
+    font-size: 1.46em;
+}
+
+h3 {
+    font-size: 1em;
 }
 
 /*Header*/
@@ -29,23 +37,27 @@ header {
 /*Header - Navigation*/
 
 .main-menu {
-    width: 30%;
+    width: 40%;
 }
 
 .main-menu ul {
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.menu-activities {
+    color: black !important;
 }
 
 .main-menu a {
     text-decoration: none;
-    color:  #0065FC;
+    color: #0065FC;
 }
 
-.main-menu a:hover {
-    text-decoration: none;
-    color: black;
+.menu-accomodation  {
+    border-top: 3px #0065FC solid;
+    padding-top: 15px;
 }
 
 .login {
@@ -71,10 +83,6 @@ h1 + p {
 
 /*Section 1 Filtres - Search Bar*/
 
-.container-filters {
-    margin-bottom: 3%;
-}
-
 .container-filters__searchbar {
     display: flex;
     align-items: center;
@@ -85,46 +93,41 @@ h1 + p {
     line-height: 40px;
     width: 30px;
     text-align: center;
-}
-.fa-map-marker-alt {
     background-color: #F2F2F2;
     padding-right: 2px;
     border-radius: 10px 0 0 10px;
+    color: black;
 }
 
-.container-filters__searchbar input {
+.container-filters__searchfield {
     align-self: stretch;
     border: 1px #F2F2F2 solid;
     padding-left: 10px;
     font-weight: bold;
 }
 
-.container-filters__searchbar button {
+.container-filters__searchbutton {
     align-self: stretch;
     background-color: #0065FC;
     color: white;
     border: 1px #0065FC solid;
     border-radius: 0 10px 10px 0;
+    cursor: pointer;
 
 }
 
 /*Section 1 Filtres - Filters*/
 
-.container-filters__btn-filters {  /*Need work*/
+.container-filters__btn { 
     font-weight: bold;
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
+    
 }
 
-.container-filters i {
-    line-height: 40px;
-    width: 40px;
+.btn i {
+    line-height: 20px;
+    width: 20px;
     text-align: center;
     margin: 0px;
-}
-
-.fa-money-bill, .fa-child, .fa-heart, .fa-dog {
     background-color: #deebff;
     margin: 0px;
     border: 5px #deebff solid;
@@ -133,12 +136,19 @@ h1 + p {
     color: #0065FC;
 }
 
+.btn:hover {
+    border: 1px #0065FC solid;
+}
+
+
 .btn {
     font-weight: bold;
-    border: 2px #F2F2F2 solid;
+    border: 1px #F2F2F2 solid;
     border-radius: 70px;
     background-color: white;
     padding: 0px 10px 0px 0px;
+    margin-left: 1%;
+    outline: none;
 }
 
 /*Section 1 Filtres - Infos*/
@@ -147,25 +157,22 @@ h1 + p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 40px;
 }
 
 .container-filters__info i {
     margin-right: 3px;
-    line-height: 20px;
-    width: 20px;
-    text-align: center;
+    font-size: 0.9em;
+    color: #0065FC;
+    border: 2px #F2F2F2 solid;
+    border-radius: 50%;
+    background-color: white;
 }
 
-.fa-info {
-    color: #0065FC;
-    border: 3px #F2F2F2 solid;
-    border-radius: 50%;
-}
 
 .container-filters__info p {
     font-weight: normal;
     font-size: 0.8em;
+    margin: 0;
 }
 
 
@@ -179,13 +186,17 @@ h1 + p {
     margin: 0 3% 2% 3%;
 }
 
+.container-hotel h3, p {
+    margin: 2% 0 2% 0;
+}
+
 /*Section 2 Hospitality- Main container*/
 
 
 .main-container {
     width: 70%;
     background-color: #F2F2F2;
-    padding: 0 40px 0 40px;
+    padding: 0 3% 3% 3%;
     margin-right: 20px;
     border-radius: 25px;
 
@@ -208,6 +219,11 @@ h1 + p {
     margin-bottom: 10px;
 }
 
+.main-container-hotel:hover {
+    transform: translate(-5px, -5px);
+
+}
+
 .main-container-hotel img {
     height: 120px;
     width: 100%;
@@ -217,14 +233,6 @@ h1 + p {
 }
 
 
-.main-container-hotel__details {
-
-}
-
-.main-container-hotel__ratings {
-
-}
-
 /*Section 2 Hospitality - Aside*/
 
 
@@ -232,12 +240,10 @@ h1 + p {
     display: flex;
     flex-direction: column;
     width: 30%;
-    margin-left: 20px;
+    margin-left: 1%;
     background-color: #F2F2F2;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0 3% 3% 3%;
     border-radius: 25px;
-
 }
 
 .aside-container__title {
@@ -261,7 +267,7 @@ h1 + p {
 .aside-container-hotels {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     height: 100%;
 }
@@ -273,17 +279,37 @@ h1 + p {
     background-color: white;
     border-radius: 25px;
     border: 5px white solid;
-
-
+    height: 27%;
 }
 
+.aside-container-hotel:hover {
+    transform: scale(1.2);
+}
 
 .aside-container-hotel img {
     width: 40%;
-    height: 145px;
     border-radius: 25px 0 0 25px;
     object-fit: cover;
 
+}
+
+.aside-container-hotel__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 3%;
+}
+
+
+
+/*Section 2 Hospitality- Rating*/
+
+.far.fa-star {
+    color: #0065fc
+}
+
+.fas.fa-star {
+    color: #0065fc
 }
 
 /*Section 2 Hospitality - Button*/
@@ -293,8 +319,13 @@ h1 + p {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    font-size: 1.1em;
+    outline: none;
+    padding-top: 1%;
+}
+
+.main-container-hotels__button:hover {
     font-size: 1.2em;
-    padding: 30px 0 30px 0;
 }
 
 
@@ -304,27 +335,39 @@ h1 + p {
     margin: 0 3% 5% 3%;
 }
 
+
 .container-activities {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
+    align-content: space-between;
     height: 450px;
+    max-height: 450px;
 
 }
 
+
+
 .container-activities__title {
-    display: flex;
-    justify-content: space-around;
+    padding-left: 5%;
     height: 56px;
 
 }
 
 .container-activities--full {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 21%;
     height: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 25px;
 }
+
+.container-activities--full:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 2px;
+}
+
 
 .container-activities--full img {
     height: 90%;
@@ -335,46 +378,68 @@ h1 + p {
 }
 
 .container-activities--large {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 21%;
     height: 60%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+}
+
+.container-activities--large:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 2px;
 }
 
 .container-activities--large img {
-    height: 90%;
+    height: 80%;
     width: 100%;
+    border-radius: 25px 25px 0 0;
     object-fit: cover;
 
 
 }
 
 .container-activities--small {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 21%;
     height: 30%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+}
+
+.container-activities--small:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 2px;
 }
 
 .container-activities--small img {
-    height: 90%;
+    height: 70%;
     width: 100%;
+    border-radius: 25px 25px 0 0;
     object-fit: cover;
-
-
 }
 
-
 .container-activities--half {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 21%;
-    height: 50%;
+    height: 45%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+}
+
+.container-activities--half:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 2px;
 }
 
 .container-activities--half img {
-    height: 90%;
+    height: 73%;
     width: 100%;
+    border-radius: 25px 25px 0 0;
     object-fit: cover;
-
-
 }
 
 
@@ -390,12 +455,6 @@ footer {
 
 }
 
-footer h2 {
-    font-size: 1.5em;
-    font-weight: bold;
-
-}
-
 footer ul {
     list-style-type: none;
     padding: 0px;
@@ -408,4 +467,16 @@ footer a {
 
 footer a:hover {
     color: #0065FC;
+}
+
+
+/*Responsive*/
+@media all and (min-width: 768px) and (max-width: 991px)
+{
+
+}
+
+@media all and (max-width: 768px)
+{
+    
 }

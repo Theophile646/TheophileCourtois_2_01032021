@@ -3,10 +3,6 @@
 @media all and (max-width: 768px)
 {
 
-
-    body {
-        overflow: auto;
-    }
     /*Header*/
     
    
@@ -49,13 +45,6 @@
         align-self: center;
         padding-right: 5%;
     }
-      
- 
-
-
-
-    
-
 
     /*Filters*/
     .container-filters {
@@ -146,6 +135,7 @@
 
     .section-activities {
         width: 90%;
+        margin: auto;
     }
 
     .container-activities {

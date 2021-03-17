@@ -14,7 +14,6 @@ body {
 #block-page {
     font-family: 'Raleway', Arial, serif;
     font-size: 1em;
-    
 }
 
 h2 {
@@ -57,7 +56,6 @@ h3 {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
     color: black !important;
-    
 }
 
 .login {
@@ -71,10 +69,13 @@ h3 {
     color: #0065FC;
 }
 
+
 /*Section 1 Filtres*/
 
 .container-filters {
-    margin: 0 3% 2% 3%;}
+    margin: 0 3% 2% 3%;
+}
+
 
 /*Section 1 Filtres - Title*/
 h1 {
@@ -86,6 +87,7 @@ h1 + p {
     font-size: 0.9em;
     font-weight: normal;
 }
+
 
 /*Section 1 Filtres - Search Bar*/
 
@@ -119,19 +121,18 @@ h1 + p {
     border: 1px #0065FC solid;
     border-radius: 0 10px 10px 0;
     cursor: pointer;
-
 }
 
 .container-filters__searchicon {
     display: none;
 }
 
+
 /*Section 1 Filtres - Filters*/
 
 .container-filters__btn { 
     font-weight: bold;
     line-height: 2;
-    
 }
 
 .btn i {
@@ -149,6 +150,7 @@ h1 + p {
 
 .btn:hover {
     border: 1px #0065FC solid;
+    animation-timing-function: ease-in-out;
 }
 
 
@@ -179,13 +181,11 @@ h1 + p {
     background-color: white;
 }
 
-
 .container-filters__info p {
     font-weight: normal;
     font-size: 0.8em;
     margin: 0;
 }
-
 
 
 /*Section 2 Hospitality*/
@@ -201,6 +201,7 @@ h1 + p {
     margin: 2% 0 2% 0;
 }
 
+
 /*Section 2 Hospitality- Main container*/
 
 
@@ -210,7 +211,6 @@ h1 + p {
     padding: 0 3% 3% 3%;
     margin-right: 20px;
     border-radius: 25px;
-
 }
 
 
@@ -232,7 +232,7 @@ h1 + p {
 
 .main-container-hotel:hover {
     transform: translate(-5px, -5px);
-
+    animation-timing-function: ease-in-out;
 }
 
 .main-container-hotel__details {
@@ -244,12 +244,10 @@ h1 + p {
     width: 100%;
     border-radius: 25px 25px 0 0;
     object-fit: cover;
-
 }
 
 
 /*Section 2 Hospitality - Aside*/
-
 
 .aside-container {
     display: flex;
@@ -276,6 +274,7 @@ h1 + p {
 .aside-container__title a:hover {
     color: #0065FC;
     font-size: 1em;
+    animation-timing-function: ease-in-out;
 }
 
 .aside-container-hotels {
@@ -285,7 +284,6 @@ h1 + p {
     align-items: flex-start;
     height: 100%;
 }
-
 
 .aside-container-hotel {
     display: flex;
@@ -298,6 +296,7 @@ h1 + p {
 
 .aside-container-hotel:hover {
     transform: scale(1.2);
+    animation-timing-function: ease-in-out;
 }
 
 .aside-container-hotel img {
@@ -315,7 +314,6 @@ h1 + p {
 }
 
 
-
 /*Section 2 Hospitality- Rating*/
 
 .far.fa-star {
@@ -325,6 +323,7 @@ h1 + p {
 .fas.fa-star {
     color: #0065fc
 }
+
 
 /*Section 2 Hospitality - Button*/
 
@@ -340,6 +339,7 @@ h1 + p {
 
 .main-container-hotels__button:hover {
     font-size: 1.2em;
+    animation-timing-function: ease-in-out;
 }
 
 
@@ -348,7 +348,6 @@ h1 + p {
 .section-activities {
     margin: 0 3% 5% 3%;
 }
-
 
 .container-activities {
     display: flex;
@@ -359,8 +358,6 @@ h1 + p {
     max-height: 450px;
 
 }
-
-
 
 .container-activities__title {
     padding-left: 5%;
@@ -380,6 +377,7 @@ h1 + p {
 
 .container-activities--full:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 2px;
+    animation-timing-function: ease-in-out;
 }
 
 
@@ -403,6 +401,7 @@ h1 + p {
 
 .container-activities--large:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 2px;
+    animation-timing-function: ease-in-out;
 }
 
 .container-activities--large img {
@@ -410,8 +409,6 @@ h1 + p {
     width: 100%;
     border-radius: 25px 25px 0 0;
     object-fit: cover;
-
-
 }
 
 .container-activities--small {
@@ -426,6 +423,7 @@ h1 + p {
 
 .container-activities--small:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 2px;
+    animation-timing-function: ease-in-out;
 }
 
 .container-activities--small img {
@@ -447,6 +445,7 @@ h1 + p {
 
 .container-activities--half:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 2px;
+    animation-timing-function: ease-in-out;
 }
 
 .container-activities--half img {
@@ -481,4 +480,5 @@ footer a {
 
 footer a:hover {
     color: #0065FC;
+    animation-timing-function: ease-in-out;
 }

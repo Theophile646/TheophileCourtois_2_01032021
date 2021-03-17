@@ -1,9 +1,10 @@
 /*Responsive*/
 @media all and (min-width: 768px) and (max-width: 991px)
 {
+
+    
     /*Header*/
     
-   
     .main-menu {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -35,7 +36,6 @@
         text-align: center;
     }
 
-
     .login {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
@@ -47,7 +47,6 @@
 
     /*Accomodation*/
     
-
     .main-container-hotel__rating {
         font-size: 0.9em;
     }

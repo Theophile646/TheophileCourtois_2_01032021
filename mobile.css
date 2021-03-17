@@ -3,8 +3,8 @@
 @media all and (max-width: 768px)
 {
 
-    /*Header*/
     
+    /*Header*/
    
     .main-menu {
         display: grid;
@@ -37,7 +37,6 @@
         text-align: center;
     }
 
-
     .login {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
@@ -46,7 +45,9 @@
         padding-right: 5%;
     }
 
+
     /*Filters*/
+
     .container-filters {
         display: flex;
         flex-direction: column;
@@ -69,7 +70,9 @@
         display: none;
     }
 
+
     /*Accomodation*/
+
     .container-hotel {
         display: flex;
         flex-direction: column-reverse;
@@ -85,8 +88,6 @@
     .main-container-results {
         display: flex;
         flex-direction: column;
-        
-
     }
 
     .main-container-hotel {
@@ -115,7 +116,6 @@
 
     .aside-container-hotel {
         margin-bottom: 2%;
-
     }
 
     .aside-container-hotel:hover {
@@ -171,15 +171,15 @@
         margin-bottom: 5%;
     }
 
+
     /*Footer*/
+
     footer {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         line-height: 2;
-
     }
-
 
 
 }

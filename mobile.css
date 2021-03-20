@@ -103,6 +103,7 @@
         width: 100%;
         border-radius: unset;
         margin: 0;
+        padding: 0;
     }
 
     .aside-container__title {

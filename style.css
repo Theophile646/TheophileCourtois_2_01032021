@@ -259,7 +259,7 @@ h1 + p {
     background-color: #F2F2F2;
     border-radius: 25px;
     align-items: center;
-    padding: 3%;
+    padding: 0 3% 3% 3%;
 }
 
 .aside-container__title {
@@ -267,6 +267,7 @@ h1 + p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .aside-container__title a {

@@ -1,4 +1,4 @@
-# Reservia
+# :luggage: Reservia
 
 Reservia is the second project of my Web Developper formation with Openclassrooms. I had to transform a mock-up into a webpage using HTML and CSS.
 
